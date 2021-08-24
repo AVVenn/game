@@ -1,0 +1,864 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    counter-reset: shot;
+    min-width: 99%;
+    max-height: 87vh;
+    background-color: rgb(0, 0,0);
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px double orange;
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.listShot {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: normal;
+	font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    background-color: orange;
+    cursor: crosshair;
+    border-radius:10px;
+}
+
+input[type="checkbox"]:checked{
+    counter-increment: shot;
+}
+
+input[type="checkbox"]:checked + label {
+    display: none;
+}
+/* блок до плюса должен в html быть перед тем, что плюса */
+
+.listShot::after{
+    content: counter(shot);
+}
+
+input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.target {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    background: radial-gradient(50% 70%, #CAE4D8, rgb(255, 145, 0));
+    border-radius: 50%;
+    animation: scale 4.5s linear;
+    position: absolute;
+    cursor: crosshair;
+    font-size: 10px;
+    /* outline: 1px solid red; */
+    visibility: hidden;
+}
+
+.target1 {
+    animation-delay: 0;
+    top: 10%;
+    left: 90%;
+}
+
+
+.target2 {
+    animation-delay: 0.6s;
+    top: 50%;
+    left: 50%;
+}
+
+.target3 {
+    animation-delay: 1.2s;
+    top: 90%;
+    left: 15%;
+}
+
+.target4 {
+    animation-delay: 1.8s;
+    top: 90%;
+    left: 20%;
+}
+
+.target4 {
+    animation-delay: 2.4s;
+    top: 60%;
+    left: 30%;
+}
+
+
+.target5 {
+    animation-delay: 3.0s;
+    top: 45%;
+    left: 70%;
+}
+
+.target6 {
+    animation-delay: 3.6s;
+    top: 37%;
+    left: 10%;
+}
+
+.target7 {
+    animation-delay: 4.1s;
+    top: 87%;
+    left: 28%;
+}
+
+.target8 {
+    animation-delay: 4.7s;
+    top: 20%;
+    left: 20%;
+}
+
+.target9 {
+    animation-delay: 5.3s;
+    top: 30%;
+    left: 70%;
+}
+
+.target10 {
+    animation-delay: 5.9s;
+    top: 90%;
+    left: 20%;
+}
+
+.target11 {
+    animation-delay: 6.5s;
+    top: 50%;
+    left: 30%;
+}
+
+.target12 {
+    animation-delay: 7.1s;
+    top: 70%;
+    left: 47%;
+}
+
+
+.target13 {
+    animation-delay: 7.8s;
+    top: 10%;
+    left: 47%;
+}
+
+.target14 {
+    animation-delay: 8.5s;
+    top: 90%;
+    left: 60%;
+}
+
+.target15 {
+    animation-delay: 9.0s;
+    top: 32%;
+    left: 10%;
+}
+
+.target16 {
+    animation-delay: 9.6s;
+    top: 70%;
+    left: 87%;
+}
+
+.target17 {
+    animation-delay: 10.2s;
+    top: 70%;
+    left: 84%;
+}
+
+.target18 {
+    animation-delay: 10.8s;
+    top: 50%;
+    left: 84%;
+}
+
+.target18 {
+    animation-delay: 11.4s;
+    top: 58%;
+    left: 24%;
+}
+
+.target19 {
+    animation-delay: 12.0s;
+    top: 51%;
+    left: 39%;
+}
+
+.target20 {
+    animation-delay: 12.6s;
+    top: 89%;
+    left: 79%;
+}
+
+.target21 {
+    animation-delay: 13.2s;
+    top: 89%;
+    left: 39%;
+}
+
+.target22 {
+    animation-delay: 13.8s;
+    top: 39%;
+    left: 60%;
+}
+
+.target23 {
+    animation-delay: 14.4s;
+    top: 97%;
+    left: 50%;
+}
+
+.target24 {
+    animation-delay: 15.0s;
+    top: 39%;
+    left: 60%;
+}
+
+.target25 {
+    animation-delay: 15.6s;
+    top: 29%;
+    left: 70%;
+}
+
+.target26 {
+    animation-delay: 16.2s;
+    top: 39%;
+    left: 80%;
+}
+
+.target27 {
+    animation-delay: 16.8s;
+    top: 69%;
+    left: 30%;
+}
+
+.target28 {
+    animation-delay: 17.4s;
+    top: 39%;
+    left: 39%;
+}
+
+.target29 {
+    animation-delay: 18.0s;
+    top: 69%;
+    left: 69%;
+}
+
+.target30 {
+    animation-delay: 18.6s;
+    top: 39%;
+    left: 69%;
+}
+
+
+.target31 {
+    animation-delay: 19.2s;
+    top: 49%;
+    left: 86%;
+}
+
+.target32 {
+    animation-delay: 19.8s;
+    top: 9%;
+    left: 69%;
+}
+
+.target33 {
+    animation-delay: 20.4s;
+    top: 33%;
+    left: 69%;
+}
+
+.target34 {
+    animation-delay: 21.0s;
+    top: 33%;
+    left: 21%;
+}
+
+.target35 {
+    animation-delay: 21.6s;
+    top: 47%;
+    left: 21%;
+}
+
+.target36 {
+    animation-delay: 22.2s;
+    top: 66%;
+    left: 22%;
+}
+
+.target37 {
+    animation-delay: 22.8s;
+    top: 71%;
+    left: 42%;
+}
+
+.target38 {
+    animation-delay: 23.4s;
+    top: 44%;
+    left: 38%;
+}
+
+.target39 {
+    animation-delay: 24.0s;
+    top: 66%;
+    left: 92%;
+}
+
+.target40 {
+    animation-delay: 24.5s;
+    top: 66%;
+    left: 32%;
+}
+
+.target41 {
+    animation-delay: 25.0s;
+    top: 36%;
+    left: 82%;
+}
+
+.target42 {
+    animation-delay: 25.5s;
+    top: 76%;
+    left: 72%;
+}
+
+.target43 {
+    animation-delay: 26.0s;
+    top: 40%;
+    left: 12%;
+}
+
+.target44 {
+    animation-delay: 26.5s;
+    top: 67%;
+    left: 92%;
+}
+
+.target45 {
+    animation-delay: 27.0s;
+    top: 17%;
+    left: 52%;
+}
+
+.target46 {
+    animation-delay: 27.5s;
+    top: 77%;
+    left: 62%;
+}
+
+.target47 {
+    animation-delay: 28.0s;
+    top: 97%;
+    left: 22%;
+}
+
+.target48 {
+    animation-delay: 28.5s;
+    top: 78%;
+    left: 12%;
+}
+
+.target49 {
+    animation-delay: 29.0s;
+    top: 97%;
+    left: 52%;
+}
+
+.target50 {
+    animation-delay: 29.5s;
+    top: 50%;
+    left: 22%;
+}
+
+.target51 {
+    animation-delay: 30.0s;
+    top: 80%;
+    left: 72%;
+}
+
+.target52 {
+    animation-delay: 30.6s;
+    top: 30%;
+    left: 52%;
+}
+
+.target53 {
+    animation-delay: 31.2s;
+    top: 90%;
+    left: 32%;
+}
+
+.target54 {
+    animation-delay: 31.8s;
+    top: 30%;
+    left: 72%;
+}
+
+.target55 {
+    animation-delay: 32.3s;
+    top: 70%;
+    left: 54%;
+}
+
+.target56 {
+    animation-delay: 32.8s;
+    top: 20%;
+    left: 42%;
+}
+
+.target57 {
+    animation-delay: 33.3s;
+    top: 70%;
+    left: 22%;
+}
+
+.target58 {
+    animation-delay: 33.8s;
+    top: 63%;
+    left: 62%;
+}
+
+.target59 {
+    animation-delay: 34.3s;
+    top: 73%;
+    left: 22%;
+}
+
+.target60 {
+    animation-delay: 34.8s;
+    top: 79%;
+    left: 62%;
+}
+
+.target61 {
+    animation-delay: 35.3s;
+    top: 69%;
+    left: 82%;
+}
+
+.target62 {
+    animation-delay: 35.8s;
+    top: 87%;
+    left: 42%;
+}
+
+.target63 {
+    animation-delay: 36.3s;
+    top: 47%;
+    left: 72%;
+}
+
+.target64 {
+    animation-delay: 36.8s;
+    top: 67%;
+    left: 32%;
+}
+
+.target65 {
+    animation-delay: 37.3s;
+    top: 77%;
+    left: 49%;
+}
+
+.target66 {
+    animation-delay: 37.8s;
+    top: 87%;
+    left: 82%;
+}
+
+.target67 {
+    animation-delay: 38.3s;
+    top: 27%;
+    left: 72%;
+}
+
+.target68 {
+    animation-delay: 38.8s;
+    top: 10%;
+    left: 67%;
+}
+
+.target69 {
+    animation-delay: 39.3s;
+    top: 67%;
+    left: 42%;
+}
+
+.target70 {
+    animation-delay: 39.8s;
+    top: 93%;
+    left: 82%;
+}
+
+.target71 {
+    animation-delay: 40.2s;
+    top: 73%;
+    left: 22%;
+}
+
+.target72 {
+    animation-delay: 40.4s;
+    top: 33%;
+    left: 72%;
+}
+
+.target73 {
+    animation-delay: 40.8s;
+    top: 63%;
+    left: 82%;
+}
+
+.target74 {
+    animation-delay: 41.2s;
+    top: 13%;
+    left: 42%;
+}
+
+.target75 {
+    animation-delay: 41.6s;
+    top: 13%;
+    left: 42%;
+}
+
+.target76 {
+    animation-delay: 42.0s;
+    top: 43%;
+    left:15%;
+}
+
+.target77 {
+    animation-delay: 42.4s;
+    top: 83%;
+    left:35%;
+}
+
+.target78 {
+    animation-delay: 42.8s;
+    top:77%;
+    left:37%;
+}
+
+.target79 {
+    animation-delay: 43.2s;
+    top: 83%;
+    left:19%;
+}
+
+.target80 {
+    animation-delay: 43.6s;
+    top: 19%;
+    left:76%;
+}
+
+.target81 {
+    animation-delay: 44.0s;
+    top: 31%;
+    left:61%;
+}
+
+.target82 {
+    animation-delay: 44.4s;
+    top: 71%;
+    left:76%;
+}
+
+.target83 {
+        animation-delay: 44.8s;
+        top: 11%;
+        left:90%;
+}
+
+.target84 {
+        animation-delay: 45.2s;
+        top: 70%;
+        left:90%;
+}
+
+.target85 {
+    animation-delay: 45.6s;
+    top: 70%;
+    left:13%;
+}
+
+.target86 {
+    animation-delay: 46.0s;
+    top: 87%;
+    left:50%;
+}
+
+.target87 {
+    animation-delay: 46.4s;
+    top: 50%;
+    left:55%;
+}
+
+.target88 {
+    animation-delay: 46.8s;
+    top: 64%;
+    left:59%;
+}
+
+.target89 {
+    animation-delay: 47.2s;
+    top: 11%;
+    left:59%;
+}
+
+.target90 {
+    animation-delay: 47.6s;
+    top: 17%;
+    left:81%;
+}
+
+.target91 {
+    animation-delay: 48.0s;
+    top: 66%;
+    left:91%;
+}
+
+.target92 {
+    animation-delay: 48.4s;
+    top: 41%;
+    left:61%;
+}
+
+.target93 {
+    animation-delay: 48.8s;
+    top: 31%;
+    left:71%;
+}
+
+.target94 {
+    animation-delay: 49.2s;
+    top: 88%;
+    left:50%;
+}
+
+.target95 {
+    animation-delay: 49.6s;
+    top: 84%;
+    left:22%;
+}
+
+.target96 {
+    animation-delay: 50.0s;
+    top: 77%;
+    left:32%;
+}
+
+.target97 {
+    animation-delay: 50.3s;
+    top: 80%;
+    left:12%;
+}
+
+.target98 {
+    animation-delay: 50.6s;
+    top: 45%;
+    left:62%;
+}
+
+.target99 {
+    animation-delay: 50.9s;
+    top: 76%;
+    left:52%;
+}
+
+.target100 {
+    animation-delay: 51.2s;
+    top: 16%;
+    left:72%;
+}
+
+.target101 {
+    animation-delay: 51.5s;
+    top: 16%;
+    left:79%;
+}
+
+.target102 {
+    animation-delay: 51.8s;
+    top: 16%;
+    left: 52%;
+}
+
+.target103 {
+    animation-delay: 51.8s;
+    top: 45%;
+    left: 89%;
+}
+
+.target104 {
+    animation-delay: 52.1s;
+    top: 16%;
+    left: 52%;
+}
+
+.target105 {
+    animation-delay: 52.45s;
+    top: 16%;
+    left: 78%;
+}
+
+.target106 {
+    animation-delay: 52.8s;
+    top: 35%;
+    left: 14%;
+}
+.target107 {
+    animation-delay: 53.15s;
+    top: 76%;
+    left: 22%;
+}
+.target108 {
+    animation-delay: 53.4s;
+    top: 66%;
+    left: 72%;
+}
+.target109 {
+    animation-delay: 53.75s;
+    top: 18%;
+    left: 77%;
+}
+.target110 {
+    animation-delay: 54.15s;
+    top: 10%;
+    left: 52%;
+}
+.target111 {
+    animation-delay: 54.5s;
+    top: 62%;
+    left: 82%;
+}
+
+.target112 {
+    animation-delay: 54.85s;
+    top: 43%;
+    left: 22%;
+}
+
+.target113 {
+    animation-delay: 55.2s;
+    top: 76%;
+    left: 55%;
+}
+
+.target114 {
+    animation-delay: 55.55s;
+    top: 90%;
+    left: 72%;
+}
+
+.target115 {
+    animation-delay: 55.9s;
+    top: 44%;
+    left: 52%;
+}
+
+.target116 {
+    animation-delay: 56.25s;
+    top: 50%;
+    left: 52%;
+}
+
+.target117 {
+    animation-delay: 56.6s;
+    top: 66%;
+    left: 73%;
+}
+
+.target118 {
+    animation-delay: 57.0s;
+    top: 38%;
+    left: 85%;
+}
+
+.target119 {
+    animation-delay: 57.5s;
+    top: 24%;
+    left: 52%;
+}
+
+.target120 {
+    animation-delay: 58.0s;
+    top: 44%;
+    left: 59%;
+}
+
+#main {
+    min-width: 99%;
+    min-height: 100vh;
+    background-color: rgb(0, 0,0);
+    margin: 0 auto;
+    border-radius:10px;
+    border: none;
+}
+
+.start {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    cursor: crosshair;
+}
+
+.start a{
+    text-decoration: none;
+    color:orange;
+}
+
+@keyframes scale {
+    0% { 
+        transform: scale(1.0);
+        visibility: visible;}
+    5% { transform: scale(1.2); }
+    10% { transform: scale(1.4); }
+    15% { transform: scale(1.6); }
+    20% { transform: scale(1.8); }
+    25% { transform: scale(2.0); }
+    30% { transform: scale(2.2); }
+    35% { transform: scale(2.4); }
+    40% { transform: scale(2.6); }
+    45% { transform: scale(2.8); }
+    50% { transform: scale(3.0); }
+    55% { transform: scale(2.8); }
+    60% { transform: scale(2.6); }
+    65% { transform: scale(2.4); }
+    70% { transform: scale(2.2); }
+    75% { transform: scale(2.0); }
+    80% { transform: scale(1.8); }
+    85% { transform: scale(1.6); }
+    90% { transform: scale(1.4); }
+    94% { transform: scale(1.2); }
+    100% { transform: scale(1.0);}
+    /* 99% { visibility: hidden;}
+    100% {left: -50px} */
+}
+
+#CAE4D8
+
+#FAECD5
